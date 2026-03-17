@@ -5,21 +5,21 @@
 class Omachy < Formula
   desc "Tiling window manager setup for macOS"
   homepage "https://dough654.github.io/Omachy/"
-  version "0.1.6-alpha"
+  version "0.1.7-alpha"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/dough654/Omachy/releases/download/v0.1.6-alpha/omachy_0.1.6-alpha_darwin_amd64.tar.gz"
-    sha256 "9c6af92edfef0a95519d1bcff26b5dcd7a3ebefcdfacf328f4b4108473fb6e9b"
+    url "https://github.com/dough654/Omachy/releases/download/v0.1.7-alpha/omachy_0.1.7-alpha_darwin_amd64.tar.gz"
+    sha256 "0113d81a48e24e499314e73aaf28bfda7045fb7fe2b05b6d8e2097387546bd6d"
 
     define_method(:install) do
       bin.install "omachy"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/dough654/Omachy/releases/download/v0.1.6-alpha/omachy_0.1.6-alpha_darwin_arm64.tar.gz"
-    sha256 "61ec8258f8dbb0ecef82d7690dcca8bde565194ef49a8e503efba1aed286ee79"
+    url "https://github.com/dough654/Omachy/releases/download/v0.1.7-alpha/omachy_0.1.7-alpha_darwin_arm64.tar.gz"
+    sha256 "91507f5c99f946bc4fa903df1f11c4ae232a80024f4c8e8111ca31b529c66978"
 
     define_method(:install) do
       bin.install "omachy"
